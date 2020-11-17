@@ -1,0 +1,80 @@
+* {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #212121, 100%;
+}
+
+.hi {
+    font-weight: 700;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.logo {
+    height: 50px;
+    margin: 16px;
+    margin-left: 56px;
+}
+
+#work {
+    text-align: right;
+    margin: 16px;
+    margin-right: 56px;
+    float: right;
+}
+
+.photo {
+    float: right;
+    margin: 16px;
+    margin-bottom: 56px;
+}
+
+.desc {
+    margin: 16px;
+    margin-bottom: 56px;
+}
+
+.footer {
+    font-size: 14px;
+}
+
+.footer-1 {
+    text-align: left;
+    margin: 16px;
+    margin-bottom: 56px;
+    margin-left: 56px;
+}
+
+#linkedin {
+    text-align: right;
+    margin: 16px;
+    margin-right: 56px;
+    float: right;
+}
+
+.box1 {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    right: 0px;
+    top: 217px;
+    background: #EDEDED;
+    z-index:-1;
+}
+
+.box2 {
+    position: absolute;
+    width: 175px;
+    height: 200px;
+    left: 0px;
+    bottom: 50px;
+    background: #EDEDED;
+    z-index:-1;
+}
