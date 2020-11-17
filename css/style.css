@@ -4,6 +4,10 @@
     color: #212121, 100%;
 }
 
+body {
+    overflow-x:hidden
+}
+
 .hi {
     font-weight: 700;
 }
@@ -26,17 +30,18 @@ a:hover {
 #work {
     text-align: right;
     margin: 16px;
+    margin-top: 24px;
     margin-right: 56px;
     float: right;
 }
 
-.photo {
+#photo {
     float: right;
     margin: 16px;
     margin-bottom: 56px;
 }
 
-.desc {
+#desc {
     margin: 16px;
     margin-bottom: 56px;
 }
@@ -45,7 +50,7 @@ a:hover {
     font-size: 14px;
 }
 
-.footer-1 {
+#footer-1 {
     text-align: left;
     margin: 16px;
     margin-bottom: 56px;
@@ -59,17 +64,29 @@ a:hover {
     float: right;
 }
 
-.box1 {
+
+@keyframes scaleOut {
+    0% {
+        transform: scaleX(100%);
+    }
+
+    100% {
+        transform: scaleX(0%);
+        overflow: hidden;
+    }
+}
+
+#box1 {
     position: absolute;
     width: 150px;
     height: 200px;
     right: 0px;
     top: 217px;
     background: #EDEDED;
-    z-index:-1;
+    z-index: -1;
 }
 
-.box2 {
+#box2 {
     position: absolute;
     width: 175px;
     height: 200px;
@@ -77,4 +94,66 @@ a:hover {
     bottom: 50px;
     background: #EDEDED;
     z-index:-1;
+}
+
+.scaleRightOut {
+    animation: scaleOut 0.3s ease-out 0s forwards;
+    transform-origin: 100% 50%;
+}
+
+.scaleLeftOut {
+    animation: scaleOut 0.3s ease-out 0s forwards;
+    transform-origin: 0% 50%;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scaleX(0%);
+    }
+
+    100% {
+        transform: scaleX(100%);
+    }
+}
+
+.scaleRightIn {
+    animation: scaleIn 0.3s ease-out 0s forwards;
+    transform-origin: 0% 50%;
+}
+
+.scaleLeftIn {
+    animation: scaleIn 0.3s ease-out 0s forwards;
+    transform-origin: 100% 50%;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.slideLeft {
+    animation: slideLeft 0.3s ease-out 0s forwards;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.slideRight {
+    animation: slideRight 0.3s ease-out 0s forwards;
 }

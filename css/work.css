@@ -1,0 +1,116 @@
+* {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #212121, 100%;
+}
+
+.hi {
+    font-weight: 700;
+}
+
+#work {
+    color: inherit;
+    text-decoration: underline;
+    
+    text-align: right;
+    margin: 16px;
+    margin-top: 24px;
+    margin-right: 56px;
+    float: right;
+}
+
+#work:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.logo {
+    height: 50px;
+    margin: 16px;
+    margin-left: 56px;
+}
+
+.photo {
+    float: right;
+    margin: 16px;
+    margin-bottom: 56px;
+}
+
+#cookforyou {
+    position: absolute;
+    color: #212121;
+    margin: 72px;
+    margin-left: 200px;
+    opacity: 0;
+}
+
+#cookforyou:hover ~ #gif-container {
+    display: block;
+}
+
+.box1 {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    right: 0px;
+    top: 217px;
+    background: #EDEDED;
+    z-index:-1;
+}
+
+.box2 {
+    position: absolute;
+    width: 175px;
+    height: 200px;
+    left: 0px;
+    bottom: 50px;
+    background: #EDEDED;
+    z-index:-1;
+}
+
+#gif-container {
+    background-color: #EDEDED;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+    height: 480px;
+    display: none;
+}
+
+#cookforyouGif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 360px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.3s ease-in 0s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    animation: fadeOut 0.3s ease-in 0s forwards;
+}
